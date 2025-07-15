@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
-
 body,
 h1,
 h2,
@@ -7,6 +5,16 @@ h3,
 h4,
 p {
   margin: 0;
+}
+
+body {
+  /* bg color only shows in desktop view */
+  background-color: hsl(30, 54%, 90%);
+}
+
+main {
+  padding: 20px;
+  font-family: "Outfit", sans-serif;
 }
 
 img {
@@ -22,6 +30,18 @@ ol {
 
 p {
   font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  padding: 10px 0;
+  color: hsl(24, 5%, 18%);
+}
+
+.main-desktop {
+  background-color: white;
 }
 
 .attribution {
