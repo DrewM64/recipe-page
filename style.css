@@ -10,11 +10,18 @@ p {
 body {
   /* bg color only shows in desktop view */
   background-color: hsl(30, 54%, 90%);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
 }
 
 main {
-  padding: 20px;
+  padding: 20px 30px;
   font-family: "Outfit", sans-serif;
+  place-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 img {
@@ -30,6 +37,11 @@ ol {
 
 p {
   font-size: 16px;
+}
+
+p,
+li,
+th {
   color: hsl(30, 10%, 34%);
 }
 
@@ -40,8 +52,28 @@ h1 {
   color: hsl(24, 5%, 18%);
 }
 
+h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+section {
+  border-bottom: solid 1px hsl(30, 18%, 87%);
+  padding-bottom: 20px;
+}
+
 .main-desktop {
   background-color: white;
+}
+
+.prep-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 30px;
+}
+
+.prep-heading {
+  color: hsl(332, 51%, 32%);
 }
 
 .attribution {
