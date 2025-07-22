@@ -45,6 +45,22 @@ th {
   color: hsl(30, 10%, 34%);
 }
 
+li {
+  padding-left: 1.2em;
+}
+
+li:not(:last-child) {
+  margin-bottom: 1.2em;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+ol li::marker {
+  font-weight: 700;
+}
+
 h1 {
   font-family: "Young Serif", serif;
   font-weight: 400;
@@ -59,8 +75,11 @@ h2 {
 }
 
 section {
-  border-bottom: solid 1px hsl(30, 18%, 87%);
   padding-bottom: 20px;
+}
+
+section:not(:last-child) {
+  border-bottom: solid 1px hsl(30, 18%, 87%);
 }
 
 .main-desktop {
@@ -69,11 +88,46 @@ section {
 
 .prep-time {
   background-color: hsl(330, 100%, 98%);
-  padding: 30px;
+  padding: 20px 30px;
+  border-radius: 5%;
 }
 
 .prep-heading {
   color: hsl(332, 51%, 32%);
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.wt-bolder {
+  font-weight: 700;
+}
+
+#nutrition p {
+  padding: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:not(:last-child) {
+  border-bottom: solid 1px hsl(30, 18%, 87%);
+}
+
+th {
+  padding: 0.8em 2em;
+  width: 50%;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+}
+
+td {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
 }
 
 .attribution {
