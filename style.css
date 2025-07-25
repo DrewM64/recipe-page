@@ -73,15 +73,15 @@ h2 {
   font-weight: 400;
 }
 
-section {
+section:not(:last-child) {
+  border-bottom: solid 1px hsl(30, 18%, 87%);
   padding-bottom: 20px;
 }
 
-section:not(:last-child) {
-  border-bottom: solid 1px hsl(30, 18%, 87%);
-}
-
 .main-desktop {
+  width: 100%;
+  max-width: 375px;
+  margin-inline: auto;
   background-color: white;
   place-self: center;
 }
@@ -145,14 +145,20 @@ td {
   }
   img {
     border-radius: 10px;
+    margin-bottom: 10px;
   }
   .main-desktop {
-    width: min(100vw, 600px);
-    padding: 20px 30px;
+    max-width: 650px;
+    padding: 30px;
     border-radius: 10px;
   }
 
-  .main {
+  main {
     padding: 0;
+    gap: 20px;
+  }
+
+  h1 {
+    padding: 10px 0 0;
   }
 }
